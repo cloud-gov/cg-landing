@@ -1,8 +1,12 @@
 # Site settings
-title: Grayscale
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: cloud.gov
+# TODO: Replace with a sensible alias someday, eg "cloud-gov-inquiries@gsa.gov"
+email: k3n2p8a6x1h6j9y6@18f.slack.com
+url: https://cloud.18f.gov
+description: "cloud.gov is a Platform-as-a-Service based on Cloud Foundry offered by 18F DevOps enabling agile teams to deploy software as fast as they can iterate."
+
+# Exclusions: Don't include these files in the generated site
+exclude: ./LICENCE, ./LICENSE, ./README.md
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -10,21 +14,23 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: Your Website
+footer: cloud.gov
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+#  - title: twitter
+#    url: https://twitter.com/SBootstrap
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/18F/cf-landing
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
