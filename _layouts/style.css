@@ -1,3 +1,4 @@
 {% include css/bootstrap.min.css %}
 /* {% include css/grayscale.css %} */
+{% include css/statuspage.css %}
 {% include css/cloudgov.css %}

@@ -6,3 +6,5 @@ applications:
   env:
     FORCE_HTTPS: true
   host: cf-landing
+  path: _site
+  
