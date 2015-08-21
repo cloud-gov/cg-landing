@@ -13,11 +13,9 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-edge: true
-
 deploy:
-  provider:
-    provider: cloudfoundry
+edge: true
+  provider: cloudfoundry
   api: https://api.18f.gov
   username: bret.mogilefsky@gsa.gov
   password:
@@ -26,3 +24,5 @@ deploy:
   space: landing
   on:
     repo: 18F/cf-landing
+    branch: master
+
