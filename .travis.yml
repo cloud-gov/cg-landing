@@ -1,0 +1,12 @@
+edge: true
+deploy:
+  provider:
+    provider: cloudfoundry
+  api: https://api.18f.gov
+  username: bret.mogilefsky@gsa.gov
+  password:
+    secure: Nz2PF4a+gONz64mEIP0EOWhr1b3wcM4VEJV71MPJKdhJVPRVHLG4iPxlHtFNubkjFqPtO/KdB+Wec46qnC8St+B9Bg7qEhm5T1wQtHXte6e+/fO/FW5UPDNvdvEKiQT2tdg9w7L67mn6i33v9u3zRmZni4Qv6MNYhk8T5axRwx6vCtYK1SfM7c1TncLqYDG1ybVntRCgugJIamRVvu+M4kfMbAC6pjL2W5xr1jBnx/wzCx4FTgcXH3/7EIWBrCSmhwft3Ht1GUrBq3cEcI7m8sZkbhP95d5htnCiM67XG9HrCAmO0mW3KfG75QYGgQTIxSYYdfkLVt5JuT7hc6Qs01HTJfFgUKNLknMjYFtvKVPLRr4fMcAc/nJrMR3iELl/MCojJLg1uVivkSkMsd0mMGg8/TUFWTdkMja71aAVi6+BI6ZN7uIesqxp77c+yIhKBNOFz16zGVk7iPbE8ZAgue6vn/mq1TY8EPL53AOYF68B4891Xh2yXYtmoIzteWsgfwGdoB8cyRtZfRbr6Ysb/bIR2A0yd0qYL9ydCCcWmdWY2q0j1X8cjj3btjXV7ITyt7ctkxsOJUcKVplbYkdBVeavLKRKonMAwjnjfQeeztzW/HvmX/Fx0IlMwlWtfY3ILoxtlJd+27QTYr0D9KNB0dgymcOu0OKEWSUywaqps/8=
+  organization: cf
+  space: landing
+  on:
+    repo: 18F/cf-landing
