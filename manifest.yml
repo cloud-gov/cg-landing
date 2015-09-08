@@ -5,6 +5,6 @@ applications:
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   env:
     FORCE_HTTPS: true
-  host: cf-landing
+  host: cloud
   domain: 18f.gov
   path: _site
