@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll html-proofer
-script: jekyll build && htmlproof ./_site
+install: gem install jekyll html-proofer about_yml
+script: about_yml_validate ./.about.yml && jekyll build && htmlproof ./_site
 
 branches:
   only:
