@@ -2,7 +2,7 @@
 title: cloud.gov
 # TODO: Replace with a sensible alias someday, eg "cloud-gov-inquiries@gsa.gov"
 email: k3n2p8a6x1h6j9y6@18f.slack.com
-url: https://cloud.18f.gov
+# url: https://cloud.18f.gov
 description: "cloud.gov is a Platform-as-a-Service based on Cloud Foundry offered by 18F DevOps enabling agile teams to deploy software as fast as they can iterate."
 
 # Exclusions: Don't include these files in the generated site
