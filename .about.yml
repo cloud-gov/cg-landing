@@ -40,7 +40,7 @@ testable: true
 #   role: Team member's role; leads should be designated as 'lead'
 team:
 - github: mogul
-  id: mogul
+  id: bret
   role: Product Lead
 - github: dlapiduz
   id: diego
@@ -52,7 +52,7 @@ team:
   id: gabriel.ramirez
   role: Ops Engineer
 - github: jcscottiii
-  id: jamescscott
+  id: james
   role: Ops Engineer
 
 # Partners for whom the project is developed
