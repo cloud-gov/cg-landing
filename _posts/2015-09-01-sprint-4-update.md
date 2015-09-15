@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New - Status page and console additions
+title: Status page and console additions
 ---
 We've added a new status page to show you the state of the cloud.gov platform, and we've made significant upgrades in your ability to manage your apps via the web.
 
