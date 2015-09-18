@@ -49,10 +49,10 @@ team:
   id: ozzy
   role: Ops Engineer
 - github: ramirezg
-  id: gabriel.ramirez
+  id: gramirez
   role: Ops Engineer
 - github: jcscottiii
-  id: james
+  id: jamesscott
   role: Ops Engineer
 
 # Partners for whom the project is developed
