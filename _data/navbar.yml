@@ -1,4 +1,10 @@
 - name: About
-  permalink: '/about/'
-- name: Projects
-  permalink: '/projects/'
+  permalink: '/#about'
+- name: Console
+  permalink: 'https://console.18f.gov/'
+- name: Documentation
+  permalink: 'https://docs.18f.gov/'
+- name: Status
+  permalink: 'https://cloudgov.statuspage.io/'
+- name: Contact
+  permalink: '/#contact'
