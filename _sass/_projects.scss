@@ -9,8 +9,16 @@
   display: block;
   min-height: 75px;
   width: 75px;
+  float: left;
 }
-
+h3.project--title {
+  float: left;
+  clear: none;
+  width: 175px;
+  font-size: 1em;
+  
+  margin: 20px 0 20px 20px;
+}
 a.project--image,
 a.project--image:active,
 a.project--image:focus,
@@ -22,6 +30,7 @@ a.project--image:visited {
 .project--description {
   border-top: 3px solid $project-accent-color;
   padding-top: .5em;
+  clear: both;
 }
 
 a .project--description span {
@@ -31,10 +40,4 @@ a .project--description span {
 
 a:hover .project--description span {
   border-bottom: 1px dotted;
-}
-
-@media screen and (min-width: 600px) {
-  .usa-grid .usa-width-one-third:last-child {
-    margin-right: 1px;
-  }
 }
