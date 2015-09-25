@@ -4,7 +4,7 @@ description: "cloud.gov is a Platform-as-a-Service based on Cloud Foundry offere
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://cloud.18f.gov" # the base hostname & protocol for your site
 logo: /assets/img/cloudgov.png
-feature_image: /assets/img/feature-background.jpg
+feature_image: /assets/img/clouds.jpg
 
 colors:
   background: '#ffffff'
