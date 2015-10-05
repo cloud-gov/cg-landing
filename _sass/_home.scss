@@ -26,4 +26,21 @@
   position: relative;
   top: 160px;
   text-align: center;
+  @media (max-width: 900px) {
+    left: 20%;
+    margin-left: -20%;
+    top: 4rem;
+    width: 100%;
+  }
 }
+
+.hero-unit {
+  @media (max-width: 900px) {
+    min-height: 22em;
+  }
+}
+
+.usa-disclaimer-stage {
+  display: none;
+}
+
