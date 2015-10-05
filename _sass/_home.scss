@@ -4,20 +4,21 @@
 
 .hero-content h1 {
   font-size: 50px;
-  font-family: serif;
-  font-weight: 600;
+  font-family: $base-font-family;
+  font-weight: 400;
 }
 
 .hero-content h2 {
-  font-family: serif;
+  font-family: $base-font-family;
   color: #fff;
   font-size: 25px;
   font-weight: 200;
+  margin-top: 1.5rem;
 }
 
 .banner.contact legend {
     font-weight: 400;
-    font-family: serif;
+    font-family: $base-font-family;
 }
 
 .hero-content {
