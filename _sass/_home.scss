@@ -44,3 +44,16 @@
   display: none;
 }
 
+.project {
+  min-height: auto;
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+h3.project--title {
+  @media (max-width: 600px) {
+    width: auto;
+  }
+}
