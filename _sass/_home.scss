@@ -4,14 +4,18 @@
 
 .hero-content h1 {
   font-size: 50px;
-  text-transform: uppercase;
-  font-family: "Source Sans Pro";
+  font-family: serif;
   font-weight: 600;
 }
 
 .hero-content h2 {
-  font-family: "Source Sans Pro";
+  font-family: serif;
   color: #fff;
   font-size: 25px;
   font-weight: 200;
+}
+
+.banner.contact legend {
+    font-weight: 400;
+    font-family: serif;
 }
