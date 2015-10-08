@@ -1,5 +1,26 @@
-cloud.gov landing page
-=========================
+# cloud.gov landing page
 
-Based on the [Jekyll version of the Grayscale bootstrap theme ](https://github.com/jeromelachaud/grayscale-theme)
+The informational website for the cloud.gov PaaS service. Provides information about the platform 
+and links to technical documentation and the live console.
 
+Uses the [U.S. Web Design Standards](https://playbook.cio.gov/designstandards/)
+
+## Installation
+This site is made with [Jekyll]. Once you've got [Ruby] on your computer, you can run:
+
+```sh
+gem install github-pages
+```
+
+(Note: depending on how Ruby was installed, you may need to prefix the above
+command with `sudo`.)
+
+To start up the local server, run:
+
+```sh
+jekyll serve --baseurl='' -w
+```
+
+Then visit [http://localhost:4000](http://localhost:4000) to view it. The `-w`
+(or `--watch`) flag tells Jekyll to rebuild the relevant pages when you edit
+the source files.
