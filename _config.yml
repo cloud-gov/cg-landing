@@ -35,7 +35,7 @@ analytics:
 
 forms:
 - type: newsletter
-  heading: Sign up to receive updates about cloud.gov from 18F
+  heading: Sign up for updates about the availability of cloud.gov from 18F
   url: https://docs.google.com/forms/d/1S8P20K7yFTMAnpG9FT5r7aW5ja_phVcRqJbRlJqvqjM/formResponse
   button: Subscribe
   privacypolicy: Your privacy and security are important to us, we'll only share your information as described in the <a href="http://www.gsa.gov/portal/content/116609">GSA Privacy and Security Notice</a>
