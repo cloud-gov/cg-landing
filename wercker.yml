@@ -5,8 +5,21 @@ build:
   steps:
     - bundle-install
     - script:
+<<<<<<< HEAD
         name: generate site
         code: bundle exec jekyll build --trace
+=======
+        name: validate about.yml
+        code: bundle exec about_yml_validate ./.about.yml
+
+    - script:
+        name: generate site
+        code: bundle exec jekyll build --trace
+
+    - script:
+        name: htmlprof site
+        code: bundle exec htmlproof ./_site
+>>>>>>> aadb98c0770f59811e1aa81702d41343a32d5f2c
 deploy:
   steps:
     - dlapiduz/cloud-foundry-deploy:
@@ -18,4 +31,7 @@ deploy:
         appname: landing-a
         alt_appname: landing-b
         domain: cloud.gov
+<<<<<<< HEAD
         hostname: 
+=======
+>>>>>>> aadb98c0770f59811e1aa81702d41343a32d5f2c
