@@ -6,7 +6,7 @@ and links to technical documentation and the live console.
 Uses the [U.S. Web Design Standards](https://playbook.cio.gov/designstandards/)
 
 ## Installation
-This site is made with [Jekyll]. Once you've got [Ruby] on your computer, you can run:
+This site is made with [Jekyll](http://www.jekyllrb.com). Once you've got [Ruby](https://www.ruby-lang.org/) on your computer, you can run:
 
 ```sh
 gem install github-pages
