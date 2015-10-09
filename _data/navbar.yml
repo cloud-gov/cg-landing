@@ -3,7 +3,7 @@
 - name: Console
   permalink: 'https://console.18f.gov/'
 - name: Documentation
-  permalink: 'https://docs.18f.gov/'
+  permalink: 'https://docs.cloud.gov/'
 - name: Updates
   permalink: '/updates'
 - name: Status
