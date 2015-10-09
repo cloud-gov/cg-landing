@@ -5,8 +5,16 @@ build:
   steps:
     - bundle-install
     - script:
+        name: validate about.yml
+        code: about_yml_validate ./.about.yml
+
+    - script:
         name: generate site
         code: bundle exec jekyll build --trace
+
+    - script:
+        name: htmlprof site
+        code: htmlproof ./_site
 deploy:
   steps:
     - dlapiduz/cloud-foundry-deploy:
