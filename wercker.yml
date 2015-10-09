@@ -18,4 +18,3 @@ deploy:
         appname: landing-a
         alt_appname: landing-b
         domain: cloud.gov
-        hostname: ~

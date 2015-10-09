@@ -1,10 +1,9 @@
 ---
 applications:
-- name: cf-landing
-  memory: 64M
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  env:
-    FORCE_HTTPS: true
-  host: cloud
-  domain: 18f.gov
-  path: _site
+- name: landing-a
+- name: landing-b
+memory: 64M
+domain: cloud.gov
+path: _site
+buildpack: staticfile_buildpack
+
