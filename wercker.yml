@@ -6,7 +6,7 @@ build:
     - bundle-install
     - script:
         name: validate about.yml
-        code: about_yml_validate ./.about.yml
+        code: bundle exec about_yml_validate ./.about.yml
 
     - script:
         name: generate site
@@ -14,7 +14,7 @@ build:
 
     - script:
         name: htmlprof site
-        code: htmlproof ./_site
+        code: bundle exec htmlproof ./_site
 deploy:
   steps:
     - dlapiduz/cloud-foundry-deploy:
