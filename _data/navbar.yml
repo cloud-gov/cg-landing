@@ -4,6 +4,8 @@
   permalink: 'https://console.18f.gov/'
 - name: Documentation
   permalink: 'https://docs.18f.gov/'
+- name: Updates
+  permalink: '/updates'
 - name: Status
   permalink: 'https://cloudgov.statuspage.io/'
 - name: Contact

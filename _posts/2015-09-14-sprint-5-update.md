@@ -18,7 +18,7 @@ It's now possible to inspect and adjust the permissions for the individual orgs 
 
 ![Adjusting a single user's permissions]({{ site.url }}/img/adjust-a-single-user.png)
 
-# Updates now published via the cloud.18f.gov
+# Updates now published via cloud.18f.gov
 We've also started consolidating announcement about updates to cloud.gov, like this one, on cloud.18f.gov! [Check it out.](http://cloud.18f.gov/updates/)
 
 # Want to know more?
@@ -29,4 +29,5 @@ Follow our team:
 - Our [kanban board for the current sprint](https://trello.com/b/ChGzyepo/gov-dev)
 - Our [calendar of team rituals](https://www.google.com/calendar/embed?src=gsa.gov_0samf7guodi7o2jhdp0ec99aks%40group.calendar.google.com&ctz=America/Los_Angeles)
 
-That's all for now... If you've got any questions about the information above, please [let us know](mailto:bret.mogilefsky@gsa.gov)!
+That's all for now...
+

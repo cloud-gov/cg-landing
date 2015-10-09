@@ -36,4 +36,4 @@ We're now publishing our [roadmap](https://18f.storiesonboard.com/m/gov-dev) in 
 
 Our [intra-sprint kanban board](https://trello.com/b/ChGzyepo/gov-dev) is also visible, as is the [calendar of cloud.gov team rituals](https://www.google.com/calendar/embed?src=gsa.gov_0samf7guodi7o2jhdp0ec99aks%40group.calendar.google.com&ctz=America/Los_Angeles) for anyone who would like to attend.
 
-That's all for now... If you've got any questions about the information above, please [let us know](mailto:bret.mogilefsky@gsa.gov)!
+That's all for now...
