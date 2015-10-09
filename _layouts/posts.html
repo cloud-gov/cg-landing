@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<section class="content">
+  <div class="usa-grid">
+    <h2>Updates</h2>
+    {% for post in site.posts %}
+    <div class="usa-width-one-whole usa-end-row">
+      {{ post.date | date: "%b %-d, %Y" }}<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+      <p>{{ post.excerpt }}</p>
+      <p><a href="{{ post.url }}">More...</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+    
