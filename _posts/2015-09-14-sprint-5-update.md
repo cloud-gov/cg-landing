@@ -18,8 +18,8 @@ It's now possible to inspect and adjust the permissions for the individual orgs 
 
 ![Adjusting a single user's permissions]({{ site.url }}/img/adjust-a-single-user.png)
 
-# Updates now published via the cloud.18f.gov
-We've also started consolidating announcement about updates to cloud.gov, like this one, on cloud.18f.gov! [Check it out.](http://cloud.gov/updates/)
+# Updates now published via the cloud.gov website
+We've also started consolidating announcement about updates to cloud.gov, like this one, on cloud.gov! [Check it out.](http://cloud.gov/updates/)
 
 # Want to know more?
 Follow our team:
