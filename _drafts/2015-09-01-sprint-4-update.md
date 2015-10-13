@@ -15,7 +15,7 @@ We're now providing this visibility via the [cloud.gov Status Page](https://clou
 We've proactively subscribed existing users to that page, so there's no need for any action on your part... You'll be notified via e-mail whenever problems are identified, or when planned maintenance is expected to impact your application's availability. However, you can also use the subscription control at the upper-right of the page to subscribe to updates via texts or Atom/RSS feed if you so choose.
 
 # Console Improvements
-In addition to the command-line client, the [cloud.gov web-based console](https://console.18f.gov/) has now entered an alpha state. You can use the console to **review your organizations and spaces**, and **manage the state of your applications, services, and routes**. Creation of accounts, orgs, and spaces is still managed [via GitHub request](https://docs.cloud.gov/getting-started/setup/).
+In addition to the command-line client, the [cloud.gov web-based console](https://console.apps.cloud.gov/) has now entered an alpha state. You can use the console to **review your organizations and spaces**, and **manage the state of your applications, services, and routes**. Creation of accounts, orgs, and spaces is still managed [via GitHub request](https://docs.cloud.gov/getting-started/setup/).
 
 Here are examples of actions now possible via the magic of your Interweb-capable browsing apparatus:
 
@@ -27,7 +27,7 @@ Here are examples of actions now possible via the magic of your Interweb-capable
 - Inspect the live resource utilization of a running application
 - Restart stopped or misbehaving applications
 
-If you've not taken a look in a while, please [check it out](https://console.18f.gov/)!  
+If you've not taken a look in a while, please [check it out](https://console.apps.cloud.gov/)!
 
 Note I said above the console is in "alpha" state, and really it's more of an MVP. Please [report problems or feature requests](https://github.com/18F/cf-deck/issues) or better yet, [make pull-requests](https://github.com/18F/cf-deck/pulls) via GitHub. (Side note: **We are short-handed on front-end/design/UI resources**, so any quick help anyone can offer, even if it's just some help with our IA, would be very **VERY** welcome!)
 
