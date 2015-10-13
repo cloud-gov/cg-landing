@@ -1,7 +1,7 @@
 - name: About
   permalink: '/#about'
 - name: Console
-  permalink: 'https://console.18f.gov/'
+  permalink: 'https://console.apps.cloud.gov/'
 - name: Documentation
   permalink: 'https://docs.cloud.gov/'
 - name: Updates
