@@ -89,8 +89,8 @@ services:
   url: https://cloudgov.statuspage.io
 - name: Travis CI
   category: continuousintegration
-  url: https://travis-ci.org/18F/cf-landing
-  badge: https://travis-ci.org/18F/cf-landing.svg?branch=master
+  url: https://travis-ci.org/18F/cg-landing
+  badge: https://travis-ci.org/18F/cg-landing.svg?branch=master
 
 # Licenses that apply to the project and/or its components (required)
 # Items by property name pattern:
@@ -98,9 +98,9 @@ services:
 #     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
 #     url: URL for the text of the license
 licenses:
-  .*:
+  cg-landing:
     name: CC0
-    url: https://github.com/18F/cf-landing/blob/master/LICENSE.md
+    url: https://github.com/18F/cg-landing/blob/master/LICENSE.md
 
 # Blogs or websites associated with project development
 blog:
@@ -120,4 +120,5 @@ links:
 
 # Email addresses of points-of-contact
 contact:
-- mailto:bret.mogilefsky@gsa.gov
+- url: mailto:bret.mogilefsky@gsa.gov
+  text: bret.mogilefsky@gsa.gov
