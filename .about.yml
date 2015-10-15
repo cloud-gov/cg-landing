@@ -20,7 +20,7 @@ owner_type: project
 
 # Maturity stage of the project (required)
 # values: discovery, alpha, beta, live
-stage: beta
+stage: alpha
 
 # Whether or not the project is actively maintained (required)
 # values: active, deprecated
