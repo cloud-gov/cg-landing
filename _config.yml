@@ -59,4 +59,9 @@ exclude:
   - LICENSE.md
   - README.md
   - updates.html
+  - manifest.yml
+  - wercker.yml
+  - Gemfile
+  - Gemfile.lock
+
   
