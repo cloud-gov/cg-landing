@@ -102,15 +102,17 @@ licenses:
     name: CC0
     url: https://github.com/18F/cg-landing/blob/master/LICENSE.md
 
-# Blogs or websites associated with project development
+# Tags to be linked  
 blog:
-- https://cloud.18f.gov
+- cloud-gov
 
 # Links to project artifacts
 # Items:
 # - url: URL for the link
 #   text: Anchor text for the link
 links:
+- url: https://cloud.gov/
+  text: cloud.gov
 - url: https://18f.storiesonboard.com/m/gov-dev
   text: Roadmap/ChangeLog story map (in StoriesOnBoard)
 - url: https://trello.com/b/ChGzyepo/gov-dev  
@@ -121,4 +123,4 @@ links:
 # Email addresses of points-of-contact
 contact:
 - url: mailto:bret.mogilefsky@gsa.gov
-  text: bret.mogilefsky@gsa.gov
+  text: Bret Mogilefsky
