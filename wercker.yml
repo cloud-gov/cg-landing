@@ -13,7 +13,7 @@ build:
         code: bundle exec jekyll build --trace
 
     - script:
-        name: htmlprof site
+        name: htmlproof site
         code: bundle exec htmlproof ./_site
 deploy:
   steps:
