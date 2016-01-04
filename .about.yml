@@ -2,7 +2,7 @@
 # .about.yml project metadata
 #
 # Short name that acts as the project identifier (required)
-name: cloud.gov
+  name: cloud.gov
 
 # Full proper name of the project (required)
 full_name: cloud.gov Platform-As-A-Service
