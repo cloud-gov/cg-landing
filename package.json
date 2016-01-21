@@ -1,0 +1,27 @@
+{
+  "name": "cg-landing",
+  "version": "1.0.0",
+  "description": "Landing page for cloud.gov Cloud Foundry https://docs.cloud.gov",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec jekyll build --baseurl='' && npm run copy",
+    "copy": "npm run copy-img && npm run copy-font",
+    "copy-img": "cp -r node_modules/cg-style/img/* ./assets/img",
+    "copy-font": "cp node_modules/cg-style/font/* ./assets/font",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "onchange './node_modules/cg-style/css/*.scss' './node_modules/cg-style/img/*' './static_src/**/*.scss' -v -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/cg-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/18F/cg-docs/issues"
+  },
+  "homepage": "https://github.com/18F/cg-docs#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "onchange": "git+https://git@github.com/msecret/onchange.git",
+    "postcss-import": "^7.1.3"
+  }
+}
