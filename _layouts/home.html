@@ -3,20 +3,19 @@ layout: base
 ---
 
 <section>
-  <div id="main" tabindex="-1" class="hero-unit" style="background-image: url('{{ page.hero-image | prepend: site.baseurl }}')">
-    <div class="usa-grid">
-      <div class="usa-width-whole hero-content">
-        <h1>{{ page.hero-text }}</h1>
-        <h2>{{ page.hero-subtext }}</h2>
+  <div id="main" tabindex="-1">
+    <div class="usa-grid section section-dark">
+      <div class="usa-width-whole billboard">
+        <h1 class="billboard-display_text">{{ page.hero-text }}</h1>
+        <h2 class="billboard-second_text">{{ page.hero-subtext }}</h1>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="usa-content section-middle section-light">
   <a name="about"></a>
   <div class="usa-grid">
-    <h2>About cloud.gov</h2>
     {% include about.html %}
   </div>
 </section>
