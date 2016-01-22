@@ -4,10 +4,11 @@
   "description": "Landing page for cloud.gov Cloud Foundry https://docs.cloud.gov",
   "main": "index.js",
   "scripts": {
-    "build": "bundle exec jekyll build --baseurl='' && npm run copy",
-    "copy": "npm run copy-img && npm run copy-font",
+    "build": "npm run copy && bundle exec jekyll build",
+    "copy": "npm run copy-img && npm run copy-font && npm run copy-css",
+    "copy-css": "cp node_modules/cg-style/css/cg_style.css ./assets/css",
     "copy-img": "cp -r node_modules/cg-style/img/* ./assets/img",
-    "copy-font": "cp node_modules/cg-style/font/* ./assets/font",
+    "copy-font": "cp node_modules/cg-style/font/* ./assets/fonts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "onchange './node_modules/cg-style/css/*.scss' './node_modules/cg-style/img/*' './static_src/**/*.scss' -v -- npm run build"
   },
