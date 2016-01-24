@@ -2234,6 +2234,13 @@ html {
 body {
   font-size: 16px; }
 
+legend {
+  font-size: 1.2rem;
+  margin-bottom: .5rem; }
+
+label {
+  margin-top: 0; }
+
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -2554,3 +2561,6 @@ p + h5 {
 
 .usa-disclaimer {
   font-size: 0.9rem; }
+
+.usa-button {
+  font-size: 1.2rem; }
