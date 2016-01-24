@@ -8,8 +8,8 @@
     {% endfor %}
     <form id="contact" action="{{ f.url }}" method="POST">
       <fieldset>
-        <legend>{{ f.heading }}</legend>
-        <div class="usa-width-one-half">
+        <h4>{{ f.heading }}</h4>
+        <div class="usa-width-one-half push">
           {% for field in f.fields %}
             {% unless field.type == 'hidden' %}<label for="contact-{{ field.name }}">{{ field.label }}</label>{% endunless %}
             <input id="contact-{{ field.name }}"
@@ -20,7 +20,7 @@
             <input type="submit" value="{{ f.button }}" class="usa-button">
           </div>
         </div>
-        <div class="usa-width-one-half" style="margin-top: .5rem;">
+        <div class="usa-width-one-half" style="margin-top: 1.5rem;">
           {% if f.privacypolicy %}
             <p>{{ f.privacypolicy }}</p>
           {% else %}

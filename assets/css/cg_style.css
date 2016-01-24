@@ -2234,12 +2234,23 @@ html {
 body {
   font-size: 16px; }
 
+form {
+  max-width: none; }
+
 legend {
   font-size: 1.2rem;
   margin-bottom: .5rem; }
 
 label {
   margin-top: 0; }
+
+input[type="email"] {
+  font-size: 1rem;
+  padding: .7rem 0.7em; }
+
+form button[type="submit"],
+form input[type="submit"] {
+  margin-top: 1.5rem; }
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -2281,6 +2292,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
   h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
     margin-top: 0.5rem; }
+  h1 + .push, h2 + .push, h3 + .push, h4 + .push, h5 + .push, h6 + .push {
+    margin-top: 1.5rem; }
 
 h1 {
   font-size: 2rem; }
