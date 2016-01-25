@@ -9,7 +9,7 @@
     <form id="contact" action="{{ f.url }}" method="POST">
       <fieldset>
         <h4>{{ f.heading }}</h4>
-        <div class="usa-width-one-half push">
+        <div class="usa-width-one-half text_block">
           {% for field in f.fields %}
             {% unless field.type == 'hidden' %}<label for="contact-{{ field.name }}">{{ field.label }}</label>{% endunless %}
             <input id="contact-{{ field.name }}"
