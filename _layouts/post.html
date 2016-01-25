@@ -2,12 +2,10 @@
 layout: page
 ---
 <section id="post" class="container content-section">
-	<div class="col-lg-8 col-lg-offset-2">
-		<header class="post-header">
-			<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-		</header>
-		<article class="post-content">
-		{{ content }}
-		</article>
-    </div>
+  <header class="post-header">
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+  <article class="post-content">
+  {{ content }}
+  </article>
 </section>
