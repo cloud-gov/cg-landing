@@ -14,7 +14,7 @@ build:
 
     - script:
         name: htmlproof site
-        code: bundle exec htmlproof ./_site
+        code: bundle exec htmlproof --alt-ignore "/^\/assets\/img\/i-/" --disable-external ./_site
 deploy:
   steps:
     - dlapiduz/cloud-foundry-deploy:
