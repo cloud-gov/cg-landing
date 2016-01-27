@@ -2639,9 +2639,9 @@ blockquote {
     color: #277CB2; }
 
 .section {
+  overflow: hidden;
   padding-bottom: 4.5rem;
-  padding-top: 4.5rem;
-  position: relative; }
+  padding-top: 4.5rem; }
 
 .section-middle {
   padding-bottom: 2.5rem;
@@ -2666,23 +2666,11 @@ blockquote {
         margin-right: auto; } }
 
 .section-dark {
-  color: #ffffff;
-  position: relative; }
+  color: #ffffff; }
   .section-dark a {
     color: #3498DB; }
   .section-dark .section-icon {
     margin-top: 1.5rem; }
-  .section-dark:after {
-    border-left: 165vh solid transparent;
-    border-right: 165vh solid transparent;
-    border-top: 35px solid #1F2C38;
-    content: '';
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 100%;
-    width: 0;
-    z-index: 0; }
 
 .section-bg-parent {
   position: relative; }
@@ -2715,8 +2703,7 @@ blockquote {
 .section-icon {
   left: 50%;
   margin-left: -4.9rem;
-  position: absolute;
-  z-index: 2; }
+  position: absolute; }
 
 .title_bar {
   margin: 0 auto;
