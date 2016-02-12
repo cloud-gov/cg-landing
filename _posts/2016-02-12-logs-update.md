@@ -7,7 +7,7 @@ title: Logging Service
 
 The cloud.gov recently launched the shared logging service. You can access it today at https://logs.cloud.gov.
 
-Given the common the need for extended and compliant logging, we decided to build it as a service. Now, every cloud.gov  application will have their logs stored automatically, zero setup required.
+Given the common need for extended and compliant logging, we decided to build it as a service. Now, every cloud.gov  application will have their logs stored automatically, zero setup required.
 
 To use it, visit https://logs.cloud.gov and use your cloud.gov credentials to log in. You can access both application logs and platform events, all of which will be persisted for 180 days.
 
