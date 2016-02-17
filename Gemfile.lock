@@ -12,6 +12,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    cloudgov-style (0.3.0)
+      sass (~> 3.4)
     colorator (0.1)
     colored (1.2)
     ethon (0.8.0)
@@ -80,5 +82,9 @@ PLATFORMS
 
 DEPENDENCIES
   about_yml
+  cloudgov-style
   html-proofer
   jekyll
+
+BUNDLED WITH
+   1.10.6
