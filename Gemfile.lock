@@ -12,7 +12,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    cloudgov-style (0.0.1)
+    cloudgov-style (0.3.0)
       sass (~> 3.4)
     colorator (0.1)
     colored (1.2)
