@@ -6,11 +6,11 @@
   "scripts": {
     "build": "npm run copy && bundle exec jekyll build",
     "copy": "npm run copy-img && npm run copy-font && npm run copy-css",
-    "copy-css": "cp node_modules/cg-style/css/cg_style.css ./assets/css",
-    "copy-img": "cp -r node_modules/cg-style/img/* ./assets/img",
-    "copy-font": "cp node_modules/cg-style/font/* ./assets/fonts",
+    "copy-css": "cp node_modules/cloudgov-style/css/cloudgov-style.css ./assets/css",
+    "copy-img": "cp -r node_modules/cloudgov-style/img/* ./assets/img",
+    "copy-font": "cp node_modules/cloudgov-style/font/* ./assets/fonts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "onchange './node_modules/cg-style/css/*.scss' './node_modules/cg-style/img/*' './static_src/**/*.scss' -v -- npm run build"
+    "watch": "onchange './node_modules/cloudgov-style/css/*.scss' './node_modules/cloudgov-style/img/*' './static_src/**/*.scss' -v -- npm run build"
   },
   "repository": {
     "type": "git",
