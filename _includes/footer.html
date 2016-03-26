@@ -1,20 +1,25 @@
-<footer class="usa-footer footer" role="contentinfo">
-  <div class="usa-grid">
-    <div class="section-content usa-content footer-links">
-      <address>
-        {% if site.footer.name %}
-          <h3 class="usa-footer-contact-heading">{{ site.footer.name }}</h3>
-        {% endif %}
-        {% if site.footer.phonenumber %}
-          <a href="tel:{{ site.footer.phonenumber }}">{{ site.footer.phonenumber }}</a>
-        {% endif %}
-        <a href="mailto:{{ site.footer.email }}">{{ site.footer.email }}</a>
-        <br>
-        {% for twitter in site.footer.twitter %}
-        <a href="https://twitter.com/{{ twitter }}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{ twitter }}</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        {% endfor %}
-      </address>
+  <footer class="usa-footer usa-footer-slim usa-sans" role="contentinfo">
+    <div class="usa-footer-primary-section">
+      <div class="usa-grid-full">
+        <nav class="usa-footer-nav usa-width-two-thirds">
+          <ul class="usa-unstyled-list">
+            <li class="usa-width-one-fourth usa-footer-primary-content">
+              <a class="usa-footer-primary-link" href="https://docs.cloud.gov/help/">cloud.gov help</a>
+            </li>
+            <li class="usa-width-one-fourth usa-footer-primary-content">
+              <a class="usa-footer-primary-link" href="https://github.com/18F/cg-landing">Edit this page</a>
+            </li>
+            <li class="usa-width-one-fourth usa-footer-primary-content">
+              <a class="usa-footer-primary-link" href="https://18f.gsa.gov/">Made by 18F</a>
+            </li>
+            <li class="usa-width-one-fourth usa-footer-primary-content">
+              <a class="usa-footer-primary-link" href="https://18f.gsa.gov/2015/10/09/cloud-gov-launch/">Announcement post</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="usa-width-one-third usa-footer-primary-content">
+          <a href="mailto:{{ site.footer.email }}">{{ site.footer.email }}</a>
+        </div>          
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
