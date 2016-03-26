@@ -13,8 +13,8 @@ build:
         code: bundle exec jekyll build --trace
 
     - script:
-        name: htmlprof site
-        code: bundle exec htmlproof ./_site
+        name: htmlproof site
+        code: bundle exec htmlproof --alt-ignore "/^\/assets\/img\/i-/" --disable-external ./_site
 deploy:
   steps:
     - dlapiduz/cloud-foundry-deploy:
