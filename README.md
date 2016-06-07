@@ -29,11 +29,10 @@ the source files.
 
 This site uses a shared cloud.gov style, [cg-style](https://github.com/18F/cg-style). This means any styling code has to be developed in *cg-style*.
 
-1. Download or clone the *cg-style* repository, `git clone git@github.com:18F/cg-style.git`
-2. Follow the instructions on the [cg-style readme](https://github.com/18F/cg-style#install-and-use) to install and build the library.
-3. Run the watching build task in the *cg-style* repository: `npm run watch`
-4. Replace the `gem 'cloudgov-style'` line in the `Gemfile` with `'cloudgov-style', :github => '18F/cg-style-gem', :branch => 'master'`.
-6. Run `bundle` again.
-7. Run `bundle config local.cloudgov-style ~/path/to/cg-style/repo` wih the path to where you cloned the cg-style repo.
-8. Edit code in the *cg-style* directory and they will propagate down to *cg-landing*
-9. Run jekyll watch.
+0. Download or clone the *cg-style* repository, `git clone git@github.com:18F/cg-style.git`
+0. Follow the instructions on the [cg-style readme](https://github.com/18F/cg-style#install-and-use) to install and build the library.
+0. Run the watching build task in the *cg-style* repository: `npm run watch`
+0. Replace the `gem 'cloudgov-style'` line in the `Gemfile` with `'cloudgov-style', :path => 'path/to/local/cg-style/gem'`.
+0. Run `bundle` again.
+0. Edit code in the *cg-style* directory and they will propagate down to *cg-landing*
+0. Run `bundle exec jekyll serve --watch`.
