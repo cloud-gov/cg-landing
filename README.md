@@ -7,19 +7,22 @@ Uses the [U.S. Web Design Standards](https://playbook.cio.gov/designstandards/)
 
 ## Installation
 This site is made with [Jekyll](http://www.jekyllrb.com). Once you've got
-[Ruby](https://www.ruby-lang.org/) on your computer, you can run:
+[Ruby](https://www.ruby-lang.org/) on your computer, you can install the
+necessary dependencies using the following commands:
 
 ```sh
-gem install github-pages
+cd cg-landing
+gem install bundler
+bundle install
 ```
 
-(Note: depending on how Ruby was installed, you may need to prefix the above
-command with `sudo`.)
+(Note: depending on how Ruby was installed, you may need to prefix the
+last two commands with `sudo`.)
 
 To start up the local server, run:
 
 ```sh
-jekyll serve --baseurl='' -w
+bundle exec jekyll serve --baseurl='' -w
 ```
 
 Then visit [http://localhost:4000](http://localhost:4000) to view it. The `-w`
@@ -36,7 +39,7 @@ code has to be developed in *cg-style*.
 0. Run the watching build task in the *cg-style* repository: `npm run watch`
 0. Replace the `gem 'cloudgov-style'` line in the `Gemfile` with
     `'cloudgov-style', :path => 'path/to/local/cg-style/gem'`.
-0. Run `bundle` again.
+0. Run `bundle install` again.
 0. Edit code in the *cg-style* directory and they will propagate down to *cg-landing*
 0. Run `bundle exec jekyll serve --watch`.
 
