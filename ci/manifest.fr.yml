@@ -1,6 +1,8 @@
 ---
 inherit: ../manifest.yml
 domain: fr.cloud.gov
+# TODO make fr.cloud.gov an `owned` domain
+no-hostname: false
 path: ../_site
 applications:
 - name: landing
