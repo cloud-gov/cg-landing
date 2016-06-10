@@ -5,35 +5,7 @@ jobs:
   - get: cg-landing-source
     trigger: true
   - task: build
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source:
-          repository: ruby
-          tag: 2.3-alpine
-      inputs:
-      - name: cg-landing-source
-      outputs:
-      - name: cg-landing-compiled
-      run:
-        dir: cg-landing-source
-        path: sh
-        args:
-        - -exc
-        - |
-          # install dependencies
-          # https://github.com/ffi/ffi/issues/485#issuecomment-209778567
-          # https://github.com/gliderlabs/docker-alpine/issues/53#issuecomment-179486583
-          apk add --update build-base libffi-dev libxml2-dev libxslt-dev
-          bundle config build.nokogiri --use-system-libraries
-          bundle
-
-          # build site
-          bundle exec jekyll build --trace
-
-          # copy files to output directory, so that they can be read by subsequent step
-          cp -R . ../cg-landing-compiled
+    file: cg-landing-source/ci/build.yml
   - put: cloud-gov-production
     params:
       manifest: cg-landing-compiled/ci/manifest.fr.yml
