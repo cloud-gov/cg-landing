@@ -1,6 +1,4 @@
 box: wercker/ruby
-steps:
-  - dlapiduz/cloud-foundry-deploy
 build:
   steps:
     - bundle-install
@@ -15,14 +13,3 @@ build:
     - script:
         name: htmlproof site
         code: bundle exec htmlproof --alt-ignore "/^\/assets\/img\/i-/" --disable-external ./_site
-deploy:
-  steps:
-    - dlapiduz/cloud-foundry-deploy:
-        api: $CF_API
-        username: $CF_USER
-        password: $CF_PASS
-        organization: $CF_ORG
-        space: $CF_SPACE
-        appname: landing-a
-        alt_appname: landing-b
-        domain: cloud.gov

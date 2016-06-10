@@ -1,9 +1,8 @@
 ---
 applications:
-- name: landing-a
-- name: landing-b
+- name: landing
 memory: 64M
 domain: cloud.gov
+no-hostname: true
 path: _site
 buildpack: staticfile_buildpack
-
