@@ -1,0 +1,6 @@
+---
+inherit: ../manifest.yml
+domain: fr.cloud.gov
+path: ../_site
+applications:
+- name: landing

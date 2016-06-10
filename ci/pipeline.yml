@@ -1,0 +1,77 @@
+---
+jobs:
+- name: deploy-production
+  plan:
+  - get: cg-landing
+    trigger: true
+  - task: test
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: ruby
+          tag: 2.3-alpine
+      inputs:
+      - name: cg-landing
+      run:
+        dir: cg-landing
+        path: sh
+        args:
+        - -exc
+        - |
+          # https://github.com/ffi/ffi/issues/485#issuecomment-209778567
+          # https://github.com/gliderlabs/docker-alpine/issues/53#issuecomment-179486583
+          apk add --update build-base libffi-dev libxml2-dev libxslt-dev
+          bundle config build.nokogiri --use-system-libraries
+          bundle
+          bundle exec jekyll build --trace
+  - put: cloud-gov-production
+    params:
+      manifest: cg-landing/ci/manifest.fr.yml
+      path: cg-landing
+      current_app_name: invite
+    on_failure:
+      put: slack
+      params:
+        text: |
+          :x: FAILED to deploy cg-landing to Production
+          <$ATC_EXTERNAL_URL/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+        channel: {{slack-channel}}
+        username: {{slack-username}}
+        icon_url: {{slack-icon-url}}
+    on_success:
+      put: slack
+      params:
+        text: |
+          :white_check_mark: Successfully deployed cg-landing to Production
+          <$ATC_EXTERNAL_URL/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+        channel: {{slack-channel}}
+        username: {{slack-username}}
+        icon_url: {{slack-icon-url}}
+
+resources:
+- name: cg-landing
+  type: git
+  source:
+    uri: {{cg-landing-git-url}}
+    branch: {{cg-landing-branch}}
+- name: cloud-gov-production
+  type: cf
+  source:
+    api: {{cf-api-url-production}}
+    username: {{cf-deploy-username-production}}
+    password: {{cf-deploy-password-production}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+    skip_cert_check: false
+- name: slack
+  type: slack-notification
+  source:
+    url: {{slack-webhook-url}}
+
+resource_types:
+- name: slack-notification
+  type: docker-image
+  source:
+    repository: cfcommunity/slack-notification-resource
