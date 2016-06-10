@@ -10,8 +10,14 @@ apk add --update build-base libffi-dev libxml2-dev libxslt-dev
 bundle config build.nokogiri --use-system-libraries
 bundle
 
+# validate about.yml
+bundle exec about_yml_validate ./.about.yml
+
 # build site
 bundle exec jekyll build --trace
+
+# validate links
+bundle exec htmlproof --alt-ignore "/^\/assets\/img\/i-/" --disable-external ./_site
 
 # copy files to output directory, so that they can be read by subsequent step
 cp -R . ../cg-landing-compiled

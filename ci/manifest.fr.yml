@@ -2,5 +2,6 @@
 inherit: ../manifest.yml
 domain: fr.cloud.gov
 # TODO make fr.cloud.gov an `owned` domain
+# https://github.com/18F/cg-landing/pull/74
 no-hostname: false
 path: ../_site
