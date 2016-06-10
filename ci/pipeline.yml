@@ -2,9 +2,9 @@
 jobs:
 - name: deploy-production
   plan:
-  - get: cg-landing
+  - get: cg-landing-source
     trigger: true
-  - task: test
+  - task: build
     config:
       platform: linux
       image_resource:
@@ -13,23 +13,31 @@ jobs:
           repository: ruby
           tag: 2.3-alpine
       inputs:
-      - name: cg-landing
+      - name: cg-landing-source
+      outputs:
+      - name: cg-landing-compiled
       run:
-        dir: cg-landing
+        dir: cg-landing-source
         path: sh
         args:
         - -exc
         - |
+          # install dependencies
           # https://github.com/ffi/ffi/issues/485#issuecomment-209778567
           # https://github.com/gliderlabs/docker-alpine/issues/53#issuecomment-179486583
           apk add --update build-base libffi-dev libxml2-dev libxslt-dev
           bundle config build.nokogiri --use-system-libraries
           bundle
+
+          # build site
           bundle exec jekyll build --trace
+
+          # copy files to output directory, so that they can be read by subsequent step
+          cp -R . ../cg-landing-compiled
   - put: cloud-gov-production
     params:
-      manifest: cg-landing/ci/manifest.fr.yml
-      path: cg-landing
+      manifest: cg-landing-compiled/ci/manifest.fr.yml
+      path: cg-landing-compiled
       current_app_name: invite
     on_failure:
       put: slack
@@ -51,7 +59,7 @@ jobs:
         icon_url: {{slack-icon-url}}
 
 resources:
-- name: cg-landing
+- name: cg-landing-source
   type: git
   source:
     uri: {{cg-landing-git-url}}
