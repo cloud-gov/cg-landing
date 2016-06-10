@@ -1,4 +1,5 @@
-box: wercker/ruby
+# https://github.com/wercker/support/issues/114#issuecomment-135538224
+box: ruby:2.3-slim
 build:
   steps:
     - bundle-install
