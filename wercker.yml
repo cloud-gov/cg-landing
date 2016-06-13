@@ -1,28 +1,9 @@
-box: wercker/ruby
-steps:
-  - dlapiduz/cloud-foundry-deploy
+# http://devcenter.wercker.com/docs/faq/alpine-faq.html#i-receive-a-context-canceled-error-when-using-an-alpine-container
+box:
+  id: ruby:2.3-alpine
+  cmd: /bin/sh
 build:
   steps:
-    - bundle-install
     - script:
-        name: validate about.yml
-        code: bundle exec about_yml_validate ./.about.yml
-
-    - script:
-        name: generate site
-        code: bundle exec jekyll build --trace
-
-    - script:
-        name: htmlproof site
-        code: bundle exec htmlproof --alt-ignore "/^\/assets\/img\/i-/" --disable-external ./_site
-deploy:
-  steps:
-    - dlapiduz/cloud-foundry-deploy:
-        api: $CF_API
-        username: $CF_USER
-        password: $CF_PASS
-        organization: $CF_ORG
-        space: $CF_SPACE
-        appname: landing-a
-        alt_appname: landing-b
-        domain: cloud.gov
+        name: run shared build
+        code: ./ci/build-shared.sh

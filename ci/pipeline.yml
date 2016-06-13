@@ -1,0 +1,57 @@
+---
+jobs:
+- name: deploy-production
+  plan:
+  - get: cg-landing-source
+    trigger: true
+  - task: build
+    file: cg-landing-source/ci/build.yml
+  - put: cloud-gov-production
+    params:
+      manifest: cg-landing-compiled/ci/manifest.fr.yml
+      path: cg-landing-compiled
+      current_app_name: invite
+    on_failure:
+      put: slack
+      params:
+        text: |
+          :x: FAILED to deploy cg-landing to Production
+          <$ATC_EXTERNAL_URL/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+        channel: {{slack-channel}}
+        username: {{slack-username}}
+        icon_url: {{slack-icon-url}}
+    on_success:
+      put: slack
+      params:
+        text: |
+          :white_check_mark: Successfully deployed cg-landing to Production
+          <$ATC_EXTERNAL_URL/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME|View build details>
+        channel: {{slack-channel}}
+        username: {{slack-username}}
+        icon_url: {{slack-icon-url}}
+
+resources:
+- name: cg-landing-source
+  type: git
+  source:
+    uri: {{cg-landing-git-url}}
+    branch: {{cg-landing-branch}}
+- name: cloud-gov-production
+  type: cf
+  source:
+    api: {{cf-api-url-production}}
+    username: {{cf-deploy-username-production}}
+    password: {{cf-deploy-password-production}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+    skip_cert_check: false
+- name: slack
+  type: slack-notification
+  source:
+    url: {{slack-webhook-url}}
+
+resource_types:
+- name: slack-notification
+  type: docker-image
+  source:
+    repository: cfcommunity/slack-notification-resource
