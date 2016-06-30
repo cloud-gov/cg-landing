@@ -3,7 +3,9 @@ layout: post
 title: Today’s Dashboard update (formerly the “Deck”)
 ---
 
-Today we released a new version of the [cloud.gov Deck (now Dashboard)](https://console.cloud.gov/). The best part is invisible: we refactored the codebase so we can improve it much faster than we could with the old version. But it has visible changes too, so here’s what’s new, what we have in mind, and how to tell us what you think.
+Today we released a new version of the [cloud.gov Deck (now Dashboard)](https://dashboard.cloud.gov/). The best part is invisible: we refactored the codebase so we can improve it much faster than we could with the old version. But it has visible changes too, so here’s what’s new, what we have in mind, and how to tell us what you think.
+
+We'll keep the [old Deck](https://console.cloud.gov/) around for about a week and then will redirect it to this new version. Let us know if this would cause problems for you.
 
 ### What's new and different
 
