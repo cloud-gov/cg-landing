@@ -3,6 +3,8 @@ applications:
 - name: landing
 memory: 64M
 domain: cloud.gov
-no-hostname: true
+hosts:
+- ""
+- "www"
 path: _site
 buildpack: staticfile_buildpack

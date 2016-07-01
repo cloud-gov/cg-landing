@@ -10,7 +10,7 @@ jobs:
     params:
       manifest: {{manifest-path}}
       path: cg-landing-compiled
-      current_app_name: invite
+      current_app_name: landing
     on_failure:
       put: slack
       params:
