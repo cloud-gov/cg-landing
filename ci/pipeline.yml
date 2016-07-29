@@ -8,7 +8,7 @@ jobs:
     file: cg-landing-source/ci/build.yml
   - put: cloud-gov-production
     params:
-      manifest: {{manifest-path}}
+      manifest: cg-landing-compiled/manifest.yml
       path: cg-landing-compiled
       current_app_name: landing
     on_failure:
