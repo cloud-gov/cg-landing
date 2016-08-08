@@ -5,5 +5,5 @@ gem 'html-proofer'
 gem 'about_yml'
 
 group :jekyll_plugins do
-  gem 'cloudgov-style'
+  gem 'cloudgov-style', :path => '/Users/msegreto/Development/cg-style'
 end
