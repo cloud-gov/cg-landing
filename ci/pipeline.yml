@@ -1,5 +1,27 @@
 ---
 jobs:
+- name: pull-status-check
+  plan:
+  - get: pull-request
+    version: every
+    trigger: true
+  - put: pull-request
+    params:
+      path: pull-request
+      status: pending
+  - task: build
+    file: pull-request/ci/build-shared.yml
+    on_success:
+      put: pull-request
+      params:
+        path: pull-request
+        status: success
+    on_failure:
+      put: pull-request
+      params:
+        path: pull-request
+        status: failure
+
 - name: deploy-production
   plan:
   - get: cg-landing-source
@@ -36,6 +58,14 @@ resources:
   source:
     uri: {{cg-landing-git-url}}
     branch: {{cg-landing-branch}}
+
+- name: pull-request
+  type: pull-request
+  source:
+    repo: {{cg-landing-git-repo}}
+    access_token: {{status-access-token}}
+    every: true
+
 - name: cloud-gov-production
   type: cf
   source:
@@ -45,12 +75,18 @@ resources:
     organization: {{cf-organization}}
     space: {{cf-space}}
     skip_cert_check: false
+
 - name: slack
   type: slack-notification
   source:
     url: {{slack-webhook-url}}
 
 resource_types:
+- name: pull-request
+  type: docker-image
+  source:
+    repository: jtarchie/pr
+
 - name: slack-notification
   type: docker-image
   source:
