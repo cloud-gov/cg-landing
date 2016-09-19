@@ -1,9 +1,0 @@
-# http://devcenter.wercker.com/docs/faq/alpine-faq.html#i-receive-a-context-canceled-error-when-using-an-alpine-container
-box:
-  id: ruby:2.3-alpine
-  cmd: /bin/sh
-build:
-  steps:
-    - script:
-        name: run shared build
-        code: ./ci/build-shared.sh
