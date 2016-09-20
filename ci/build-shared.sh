@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script is shared by Concourse and Wercker.
+# This script is shared by multiple Concourse pipelines.
 
 set -e
 set -x
