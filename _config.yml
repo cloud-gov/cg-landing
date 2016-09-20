@@ -60,7 +60,6 @@ exclude:
   - README.md
   - updates.html
   - manifest.yml
-  - wercker.yml
   - Gemfile
   - Gemfile.lock
   - node_modules
