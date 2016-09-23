@@ -8,7 +8,7 @@ set -x
 # install dependencies
 # https://github.com/ffi/ffi/issues/485#issuecomment-209778567
 # https://github.com/gliderlabs/docker-alpine/issues/53#issuecomment-179486583
-apk add --update build-base libffi-dev libxml2-dev libxslt-dev
+apk add --update build-base libcurl libffi-dev libxml2-dev libxslt-dev
 bundle config build.nokogiri --use-system-libraries
 bundle
 
