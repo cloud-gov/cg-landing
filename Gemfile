@@ -5,5 +5,5 @@ gem 'html-proofer'
 gem 'about_yml'
 
 group :jekyll_plugins do
-  gem 'cloudgov-style'
+  gem 'cloudgov-style', :path => '/Users/danielwilliams/code/18f/cloudgov-style/gem'
 end
