@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Logging Service
+title: Logging service
 ---
 
-## New feature: Zero-setup persistent logs
+New feature: Zero-setup persistent logs.
 
 Given the universal need for compliant logging, we've recently added a common logging facility to cloud.gov. Now, logs and events for every cloud.gov application are stored and indexed automatically, with zero setup required. 
 

@@ -48,7 +48,7 @@ forms:
       value: -7237923910070247354
 
 footer:
-  email: cloud-gov-support@gsa.gov
+  email: cloud-gov-inquiries@gsa.gov
   twitter:
     - 18f
 
@@ -60,10 +60,8 @@ exclude:
   - README.md
   - updates.html
   - manifest.yml
-  - wercker.yml
   - Gemfile
   - Gemfile.lock
   - node_modules
   - package.json
-
-  
+  - ci
