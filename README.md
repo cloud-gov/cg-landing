@@ -1,3 +1,7 @@
+# DEPRECATED
+
+We've migrated this information to [18F/cg-site](https://github.com/18F/cg-site), and that repository is now the source for the live version of [https://cloud.gov/](https://cloud.gov/). Please go to that repository to file issues and pull requests for the site. Thanks!
+
 # cloud.gov landing page
 
 The informational website for the cloud.gov PaaS service. Provides information
